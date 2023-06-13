@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const number = +prompt('Enter the number of terms: ');
+    let n1 = 0, n2 = 1, nextTerm;
+    document.write(n1 + ","+ n2 +',');
+    let sum=n1+n2;
+    for (let i = 1; i <= number-2; i++) {
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        document.write(nextTerm + ',');
+        sum+=nextTerm;
+    }
+    document.write('<br> Tong cua day so la ' + sum)
+
+</script>
